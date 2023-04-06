@@ -17,10 +17,15 @@ html {
 .header {
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .navigation {
-
+    display: inline-block;
 }
 
 .navigation .subnav {
@@ -45,6 +50,10 @@ html {
 
 .navigation > li > a {
     text-transform: uppercase;
+}
+
+.nav-icon {
+    font-size: 12px;
 }
 
 .navigation .subnav li:hover a,
@@ -73,13 +82,104 @@ html {
     line-height: 38px;
 }
 
-.slider {
-    min-height: 500px;
+.header .search-btn {
+    line-height: 46px;
+    float: right;
+    padding: 0 21px;
 }
+
+.header .search-btn:hover {
+    background-color: #fffa;
+    cursor: pointer;
+}
+
+.header .search-btn .search-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider2.jpg') top center / cover no-repeat;
+}
+
+.slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 46px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.slider .text-decoration {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
 
 .content {
+    background-color: #fff;
+}
+
+.content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+.content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+ 
+.content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.content .member-list {
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+.content .member-item {
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+
+.content .member-name {
+    font-size: 15px;
+}
+
+.content .member-avt {
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 4px;
 
 }
+
 
 .footer {
 
