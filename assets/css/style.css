@@ -10,6 +10,9 @@ html {
     font-family: Arial, Helvetica, sans-serif ;
 }
 
+.text-white {
+    color: #fff !important;
+}
 .main {
 
 }
@@ -180,6 +183,42 @@ html {
 
 }
 
+.tour-section {
+    background-color: #000;
+}
+
+.book-tikets {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.book-tikets li {
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-tikets .sold-out {
+    color: #fff;
+    background-color: red;
+    padding: 3px 4px;
+    margin-left: 16px;
+    border-radius: 4px;
+}
+
+.book-tikets .quantify {
+    float: right;
+    height: 24px;
+    width: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
 
 .footer {
 
