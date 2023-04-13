@@ -335,7 +335,7 @@ html {
     justify-content: center;
 }
 
-.modal .open { 
+.open { 
     display: flex;
 }
 
@@ -345,6 +345,7 @@ html {
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 
 .modal-header {
@@ -484,4 +485,14 @@ html {
 .footer .copyright {
     margin-top: 15px;
     color: rgba(0,0,0,0.6);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+    }
 }
